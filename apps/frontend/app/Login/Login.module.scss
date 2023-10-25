@@ -1,0 +1,126 @@
+.Login {
+  max-width: 114rem;
+  margin: 0 auto;
+  // min-height: 100vh;
+  display: flex;
+
+  max-height: 90vh;
+  position: relative;
+  overflow: hidden;
+
+  &__image {
+    flex: 0 1 30%;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+  }
+
+  &__container {
+    flex: 1 1 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    form {
+      display: flex;
+      flex-direction: column;
+
+      width: 35rem;
+      margin-bottom: 2rem;
+
+      label {
+        font-size: var(--font-body);
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+        color: var(--color-primary);
+      }
+
+      input {
+        margin-bottom: 1.5rem;
+        height: 4rem;
+        padding: 0.5rem 1rem;
+        border: 1px solid var(--color-light);
+        font-family: inherit;
+        font-size: var(--font-body);
+        font-weight: 500;
+
+        &:last-of-type {
+          margin-bottom: 0rem;
+        }
+
+        &:focus {
+          outline: 1px solid var(--color-accent);
+        }
+      }
+    }
+  }
+
+  &__Input {
+    padding: 0.5rem 1rem;
+  }
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0 2rem 0;
+  input {
+    margin-right: 1.4rem;
+    width: 1.6rem;
+    height: 1.6rem;
+    outline: none !important;
+    background: var(--color-accent) !important;
+  }
+
+  p {
+    font-size: var(--font-body);
+
+    color: var(--color-primary);
+    font-weight: 500;
+    // line-height: 1.5;
+
+    span {
+      color: var(--color-accent);
+    }
+  }
+}
+
+.notification {
+  position: absolute;
+  width: 40rem;
+  // display: flex;
+  top: 0;
+  left: 50%;
+  padding: 2rem 1rem;
+  font-size: var(--font-body);
+  background-color: var(--color-success);
+  transform: translateX(-50%);
+  text-align: center;
+  color: var(--color-white);
+  font-weight: 500;
+  font-family: inherit;
+  opacity: 0;
+}
+
+.notification__error {
+  background-color: var(--color-urgent);
+  opacity: 1;
+}
+.notification__show {
+  opacity: 1;
+}
+
+.btnSignUp {
+  border: none;
+  padding: 1rem;
+  outline: none;
+  font-family: inherit;
+  font-weight: 600;
+  color: var(--color-accent);
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration: underline;
+}

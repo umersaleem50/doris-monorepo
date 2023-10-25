@@ -1,0 +1,88 @@
+{
+  "clothing": [
+    {
+      "name": "View all",
+      "url": ""
+    },
+    {
+      "name": "Blouses and shirts",
+      "url": "shirt"
+    },
+    {
+      "name": "costumes",
+      "url": "dress"
+    },
+    {
+      "name": "Pants",
+      "url": "pant"
+    },
+    {
+      "name": "Jumpers & Sweaters",
+      "url": "sweater&category=jumper"
+    },
+    {
+      "name": "Jeans",
+      "url": "jean"
+    },
+    {
+      "name": "Home Clothes",
+      "url": "home cloth"
+    },
+    {
+      "name": "Jumpsuits",
+      "url": "jumpsuit"
+    },
+    {
+      "name": "Beachwear",
+      "url": "beachwear"
+    },
+    {
+      "name": "shorts",
+      "url": "skirt"
+    },
+    {
+      "name": "Tops",
+      "url": "top"
+    },
+    {
+      "name": "Socks, shockings, tights",
+      "url": "sock&category=shocking&category=tight"
+    }
+  ],
+  "shoes": [
+    {
+      "name": "All",
+      "url": ""
+    },
+    {
+      "name": "Joggers",
+      "url": "jogger"
+    },
+    {
+      "name": "Sneakers",
+      "url": "sneaker"
+    },
+    {
+      "name": "Heels",
+      "url": "heel"
+    }
+  ],
+  "accessories": [
+    {
+      "name": "All",
+      "url": ""
+    },
+    {
+      "name": "Glasses",
+      "url": "glasses"
+    },
+    {
+      "name": "Bags",
+      "url": "bag"
+    },
+    {
+      "name": "Ribbens",
+      "url": "ribben"
+    }
+  ]
+}

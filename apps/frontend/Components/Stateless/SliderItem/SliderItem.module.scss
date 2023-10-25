@@ -1,0 +1,23 @@
+.sliderItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+
+  &__prices {
+    display: flex;
+    flex-direction: row;
+  }
+
+  p {
+    margin-top: 0.8rem;
+
+    &:not(:last-of-type) {
+      margin-right: 1rem;
+    }
+  }
+
+  &:not(:last-of-type) {
+    margin-right: 3rem;
+  }
+}

@@ -1,0 +1,23 @@
+.categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  grid-column-gap: 3rem;
+  grid-row-gap: 5rem;
+  position: relative;
+
+  &:last-child {
+    grid-column: span 3;
+    flex: 1;
+  }
+}
+.category {
+  display: grid;
+
+  justify-items: center;
+
+  &__image {
+    height: 40rem;
+    width: 30rem;
+    position: relative;
+  }
+}

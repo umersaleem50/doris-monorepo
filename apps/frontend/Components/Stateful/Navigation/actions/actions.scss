@@ -1,0 +1,23 @@
+@import "../../../../SCSS/_mixin.scss";
+.actions {
+  display: grid;
+  justify-items: flex-end;
+  grid-template-columns: 1fr 3rem 3rem 11rem;
+  align-items: center;
+  grid-column-gap: 2rem;
+  grid-column: 3 / -1;
+  grid-row: 1 / -1;
+  transition: all 0.2s ease-in-out;
+
+  @include respond(phone) {
+    grid-template-columns: 1fr 2rem 2rem 1fr;
+  }
+  // background-color: aqua;
+}
+
+.profilePicture {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  overflow: hidden;
+}

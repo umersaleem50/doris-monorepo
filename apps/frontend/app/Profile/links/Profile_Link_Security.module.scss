@@ -1,0 +1,24 @@
+.notification {
+  position: absolute;
+  width: 40rem;
+  // display: flex;
+  top: 0;
+  left: 50%;
+  padding: 2rem 1rem;
+  font-size: var(--font-body);
+  background-color: var(--color-success);
+  transform: translateX(-50%);
+  text-align: center;
+  color: var(--color-white);
+  font-weight: 500;
+  font-family: inherit;
+  opacity: 0;
+}
+
+.notification__error {
+  background-color: var(--color-urgent);
+  opacity: 1;
+}
+.notification__show {
+  opacity: 1;
+}

@@ -1,0 +1,12 @@
+.Grid {
+  & > *:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+  max-width: 114rem;
+}
+.GridBox {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 26rem));
+  grid-gap: 3rem;
+}

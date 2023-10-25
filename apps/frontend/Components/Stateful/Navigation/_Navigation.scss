@@ -1,0 +1,175 @@
+@import '~apps/frontend/SCSS/_mixin.scss';
+.nav {
+  align-items: center;
+  margin-top: 1rem;
+  border-bottom: 1px solid var(--color-stroke);
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  background-color: var(--color-white);
+  box-shadow: 0.5rem 0.5rem 1rem rgba(#000, 0.1);
+  // height: 6rem;
+  // padding: 3rem 0;
+  @include respond(tab-port) {
+    height: 6rem;
+  }
+
+  @include respond(tab-port) {
+    width: 100%;
+  }
+  @include respond(tab-land) {
+    padding: 0 3rem;
+  }
+
+  &__parentContainer {
+    // height: 5rem;
+
+    max-width: var(--max-width);
+    margin: 0.5rem auto;
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-columns: 1fr minmax(8rem, 70rem) 1fr;
+    align-items: center;
+
+    position: relative;
+
+    @include respond(tab-port) {
+      padding: 0 3rem;
+    }
+
+    @include respond(phone) {
+      padding: 0;
+    }
+  }
+
+  &__links {
+    display: grid;
+    grid-column: 2/3;
+    height: 100%;
+
+    align-items: center;
+
+    grid-row: 1 / -1;
+    position: relative;
+
+    ul {
+      @include respond(tab-port) {
+        display: none;
+      }
+      width: 100%;
+      list-style: none;
+      display: flex;
+      justify-self: flex-start;
+      justify-content: space-between;
+      z-index: 20;
+    }
+  }
+
+  &__link {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: var(--color-primary);
+    text-transform: uppercase;
+    height: 100%;
+    padding: 2rem 1rem;
+    margin: 0 0.5rem;
+
+    @include respond(tab-port) {
+      padding: 1rem 0.5rem;
+    }
+  }
+
+  &__container {
+    position: absolute;
+    top: 105%;
+    width: 100%;
+
+    box-shadow: 0.5rem 1rem 3rem rgba(#000, 0.2);
+    z-index: 10;
+    background-color: var(--color-white);
+    display: grid;
+    grid-template-rows: minmax(10rem, 15rem) 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: column;
+
+    // grid-row-gap: 2rem;
+
+    @include respond(tab-port) {
+      display: none;
+    }
+
+    @include respond(phone) {
+      min-width: 100vw;
+    }
+
+    &__category {
+      // margin-top: 1rem;
+      height: 100%;
+      width: 100%;
+      padding: 2rem;
+      border-right: 2px solid var(--color-stroke);
+
+      display: grid;
+
+      // display: grid;
+
+      &__box {
+        margin-top: 1.5rem;
+        grid-column-gap: 2rem;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+        grid-row-gap: 0.5rem;
+      }
+    }
+
+    &__banner {
+      display: grid;
+      grid-column: 1 / -1;
+      grid-row: 1 / 2;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+        // max-height: 16rem;
+
+        object-fit: cover;
+        // background-image: linear-gradient(to right, #000, #000);
+      }
+    }
+  }
+
+  //
+}
+
+.search__toggle {
+  // position: absolute;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+
+  grid-column: 2/-1;
+  input {
+    border-bottom: 2px solid var(--color-accent);
+    padding: 1rem;
+  }
+
+  @include respond(phone) {
+    position: fixed;
+    // min-width: 100vw;
+    padding: 0 1rem;
+
+    left: 0;
+
+    input {
+      min-width: 85vw;
+    }
+  }
+}
+
+.active,
+.nav__link:hover {
+  border-bottom: 2px solid var(--color-accent);
+}

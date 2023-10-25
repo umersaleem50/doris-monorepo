@@ -1,0 +1,61 @@
+[
+  {
+    "name": "Gender",
+    "options": [
+      {
+        "name": "Female",
+        "value": "female"
+      },
+      {
+        "name": "Male",
+        "value": "male"
+      }
+    ]
+  },
+  {
+    "name": "Style",
+    "options": [
+      {
+        "name": "Partywear",
+        "value": "partywear"
+      },
+      {
+        "name": "Casual",
+        "value": "casual"
+      },
+      {
+        "name": "Classic",
+        "value": "classic"
+      }
+    ]
+  },
+  {
+    "name": "Price Range",
+    "options": [
+      {
+        "name": "All"
+      },
+      {
+        "name": "Lowest",
+        "value": "-1"
+      },
+      {
+        "name": "Highest",
+        "value": "1"
+      }
+    ]
+  },
+  {
+    "name": "Category",
+    "options": [
+      {
+        "name": "Dresses",
+        "value": "dress"
+      },
+      {
+        "name": "Accessories",
+        "value": "accessories"
+      }
+    ]
+  }
+]

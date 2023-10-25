@@ -1,0 +1,146 @@
+[
+  {
+    "image": "shoes.jpg",
+    "collections": [
+      {
+        "name": "Cotton Black Dress",
+        "price": 43.9,
+        "image": "shoes.jpg"
+      },
+      {
+        "name": "Sanddle shoulder bag with hardware",
+        "price": 12.5,
+        "image": "shoes.jpg"
+      },
+      {
+        "name": "Lather Shoes",
+        "price": 99.3,
+        "image": "shoes.jpg"
+      }
+    ],
+    "gender": "female",
+    "style": ["partywear", "dinner", "birthday"],
+    "category": ["dress", "outerwear"],
+    "price": 150
+  },
+  {
+    "image": "skirt.jpg",
+    "collections": [
+      {
+        "name": "Cotton Black Dress",
+        "price": 30.9,
+        "image": "skirt.jpg"
+      },
+      {
+        "name": "Sanddle shoulder bag with hardware",
+        "price": 42.5,
+        "image": "skirt.jpg"
+      },
+      {
+        "name": "Lather Shoes",
+        "price": 59.3,
+        "image": "skirt.jpg"
+      }
+    ],
+    "gender": "female",
+    "style": ["partywear", "dinner", "birthday"],
+    "category": ["dress", "outerwear"],
+    "price": 150
+  },
+  {
+    "image": "shoes.jpg",
+    "collections": [
+      {
+        "name": "Cotton Black Dress",
+        "price": 43.9,
+        "image": "shoes.jpg"
+      },
+      {
+        "name": "Sanddle shoulder bag with hardware",
+        "price": 12.5,
+        "image": "shoes.jpg"
+      },
+      {
+        "name": "Lather Shoes",
+        "price": 99.3,
+        "image": "shoes.jpg"
+      }
+    ],
+    "gender": "female",
+    "style": ["partywear", "dinner", "birthday"],
+    "category": ["dress", "outerwear"],
+    "price": 150
+  },
+  {
+    "image": "shoes.jpg",
+    "collections": [
+      {
+        "name": "Cotton Black Dress",
+        "price": 43.9,
+        "image": "shoes.jpg"
+      },
+      {
+        "name": "Sanddle shoulder bag with hardware",
+        "price": 12.5,
+        "image": "shoes.jpg"
+      },
+      {
+        "name": "Lather Shoes",
+        "price": 99.3,
+        "image": "shoes.jpg"
+      }
+    ],
+    "gender": "female",
+    "style": ["partywear", "dinner", "birthday"],
+    "category": ["dress", "outerwear"],
+    "price": 150
+  },
+  {
+    "image": "skirt.jpg",
+    "collections": [
+      {
+        "name": "Cotton Black Dress",
+        "price": 43.9,
+        "image": "skirt.jpg"
+      },
+      {
+        "name": "Sanddle shoulder bag with hardware",
+        "price": 12.5,
+        "image": "skirt.jpg"
+      },
+      {
+        "name": "Lather Shoes",
+        "price": 99.3,
+        "image": "skirt.jpg"
+      }
+    ],
+    "gender": "female",
+    "style": ["partywear", "dinner", "birthday"],
+    "category": ["dress", "outerwear"],
+    "price": 150
+  },
+  {
+    "image": "shoes.jpg",
+    "collections": [
+      {
+        "name": "Cotton Black Dress",
+        "price": 43.9,
+        "image": "shoes.jpg"
+      },
+      {
+        "name": "Sanddle shoulder bag with hardware",
+        "price": 12.5,
+        "image": "shoes.jpg"
+      },
+      {
+        "name": "Lather Shoes",
+        "price": 99.3,
+        "image": "shoes.jpg"
+      }
+    ],
+    "gender": "female",
+    "style": ["partywear", "dinner", "birthday"],
+    "category": ["dress", "outerwear"],
+    "price": 150
+  }
+]

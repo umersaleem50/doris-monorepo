@@ -1,0 +1,25 @@
+@import '../../../SCSS/mixin';
+
+.brands {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6rem;
+  // position: relative;
+}
+.brand {
+  width: 10rem;
+  height: 3rem;
+  opacity: 0.8;
+  object-fit: contain;
+  position: relative;
+  @include respond(tab-port) {
+    max-width: 8rem;
+  }
+  @include respond(phone) {
+    max-width: 5rem;
+    height: auto;
+  }
+}

@@ -1,0 +1,86 @@
+@import "../../../SCSS/mixin";
+.slider {
+  display: flex;
+  flex-direction: column;
+  max-width: 114rem;
+
+  &__buttons {
+    margin: 0 auto;
+
+    @include respond(phone) {
+      margin: 0 1rem;
+      display: flex;
+      justify-content: space-between;
+      overflow-x: scroll;
+      padding-bottom: 1.5rem;
+    }
+  }
+
+  &__products {
+    position: relative;
+    min-height: 35rem;
+    max-height: 40rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    overflow: hidden;
+
+    @include respond(tab-land) {
+      overflow-x: scroll;
+    }
+
+    &__container {
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: row;
+      display: flex;
+      align-items: center;
+      position: absolute;
+      transition: all 0.8s cubic-bezier(0.66, 0.01, 0.23, 0.99);
+      min-height: 100%;
+      // width: 100%;
+    }
+  }
+
+  &__message {
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: inherit;
+    position: absolute;
+
+    transform: translateX(+60%);
+    // margin: 0 auto;
+    // display: flex;
+    color: var(--color-urgent);
+    align-self: center;
+    width: 50rem;
+    // text-align: center;
+  }
+
+  &__arrowBtns {
+    display: flex;
+    width: 10rem;
+    justify-content: space-between;
+    align-self: center;
+    margin-bottom: 4rem;
+  }
+
+  &__arrow {
+    width: 3rem;
+    height: 3rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    outline: none;
+    background-color: transparent;
+    border-radius: 0.5rem;
+    border: none;
+    transition: background-color 0.1s ease-in;
+    &:hover {
+      background-color: var(--color-accent);
+    }
+    &__icon {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@org/api-error": ["libs/api-error/src/index.ts"],
+      "@org/catch-async": ["libs/catch-async/src/index.ts"],
+      "@org/controllers": ["libs/controllers/src/index.ts"],
+      "@org/db-models": ["libs/db-models/src/index.js"],
+      "@org/filter-fields": ["libs/filter-fields/src/index.ts"],
+      "@org/main-router": ["libs/main-router/src/index.ts"],
+      "@org/models": ["libs/models/src/index.ts"],
+      "@org/routes": ["libs/routes/src/index.ts"],
+      "@org/send-mail": ["libs/send-mail/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

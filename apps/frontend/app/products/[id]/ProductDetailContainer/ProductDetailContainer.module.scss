@@ -1,0 +1,38 @@
+.ProductDetailContainer {
+  width: 100%;
+  height: auto;
+  position: relative;
+
+  h5 {
+    &:first-of-type {
+      cursor: pointer;
+    }
+  }
+}
+.WrapperContent {
+  width: 100%;
+  // display: inline-block;
+  height: 0;
+
+  display: none;
+}
+.BtnToggle {
+  position: absolute;
+  top: 0.5rem;
+  right: 5%;
+  padding: 0.5rem;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  color: var(--color-primary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.WrapperContent__show {
+  display: inline-block;
+  height: auto;
+}

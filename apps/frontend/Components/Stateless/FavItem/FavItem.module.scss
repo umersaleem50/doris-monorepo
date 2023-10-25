@@ -1,0 +1,71 @@
+.FavItem {
+  display: flex;
+  max-height: 60rem;
+  cursor: pointer;
+  //   padding: 1rem;
+  transition: all 0.2s ease-in;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  position: relative;
+  background-color: rgba(#e09c7f, 0.2);
+
+  &:not(:last-of-type) {
+    margin-bottom: 1.5rem;
+  }
+
+  &:hover {
+    // box-shadow: 0.5rem 0.5rem 1.5rem rgba(#000, 0.2);
+    background-color: rgba(#e09c7f, 0.5);
+  }
+}
+.Image {
+  height: 12rem;
+  width: 10rem;
+  position: relative;
+}
+
+.Container {
+  display: flex;
+  flex: 60% 1 1;
+  justify-self: flex-end;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem 1rem;
+  margin-left: 1rem;
+}
+
+.TrashIcon {
+  width: 2rem;
+  height: 2rem;
+  color: var(--color-primary);
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  z-index: 100;
+  transition: color 0.2s ease-in;
+  &:hover {
+    color: var(--color-urgent);
+  }
+}
+
+.Detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.Options {
+  justify-content: space-between;
+  display: flex;
+  margin-top: 0.5rem;
+  max-width: 30rem;
+
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+.Quatity {
+  display: flex;
+  align-items: center;
+}

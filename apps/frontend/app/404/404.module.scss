@@ -1,0 +1,13 @@
+.FourOFour {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: inline-block;
+  flex-direction: column;
+  text-align: center;
+  transform: translateY(-10%);
+}

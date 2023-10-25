@@ -1,0 +1,39 @@
+.CurrentSize {
+  color: var(--color-primary);
+  text-transform: uppercase;
+  font-size: var(--font-body);
+  font-weight: bold;
+  span {
+    text-transform: capitalize;
+    color: var(--color-secondary) !important;
+    font-weight: 500;
+  }
+  margin-bottom: 2rem;
+}
+
+.Options {
+  display: flex;
+}
+
+.Option {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-family: inherit;
+  border-radius: 50%;
+  border: 1px solid var(--color-accent);
+  cursor: pointer;
+}
+.Disabled {
+  border: 1px solid var(--color-light);
+  color: var(--color-light);
+}
+
+.Active {
+  background-color: var(--color-accent);
+}

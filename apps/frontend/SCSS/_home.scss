@@ -1,0 +1,18 @@
+@import "../SCSS/_mixin.scss";
+
+.hero {
+  max-width: 114rem;
+  margin: 0 auto;
+}
+
+section {
+  max-width: 114rem;
+  margin: 6rem auto 14rem auto;
+
+  @include respond(tab-land) {
+    margin: 4rem 5rem 10rem 5rem;
+  }
+  @include respond(phone) {
+    margin: 3rem 1.5rem 8rem 1.5rem;
+  }
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "text": "Profile info",
+    "to": "/me"
+  },
+  {
+    "text": "My orders",
+    "to": "/orders"
+  },
+  {
+    "text": "Security",
+    "to": "/security"
+  },
+  {
+    "text": "Address details",
+    "to": "/address"
+  },
+  {
+    "text": "Payment details",
+    "to": "/payment"
+  },
+  {
+    "text": "Help & FAQ",
+    "to": "/help"
+  }
+]

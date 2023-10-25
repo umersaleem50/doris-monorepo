@@ -1,0 +1,130 @@
+.Products {
+  display: flex;
+  max-width: 114rem;
+  margin: 0 auto;
+  padding-top: 3rem;
+}
+.Products__category {
+  flex: 0 1 30%;
+  //   background-color: blueviolet;
+  margin-right: 3rem;
+}
+.Products__container {
+  flex: 0 1 100%;
+  //   background-color: royalblue;
+}
+.Products__Options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Categories {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-right: 3rem;
+}
+.Category {
+  padding: 1rem 2rem;
+  border: none;
+  width: 100%;
+  text-align: left;
+  background-color: transparent;
+  font-family: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+  border-radius: 0.2rem;
+
+  &:hover,
+  &:active,
+  &__active {
+    background-color: var(--color-accent);
+    color: var(--color-white);
+  }
+
+  &:not(:last-of-type) {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.OptionSelector {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+  font-family: inherit;
+  font-size: var(--font-body);
+}
+.Options {
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+}
+
+.Option__Range {
+  background: var(--color-accent);
+  outline: none;
+  appearance: none;
+  border-radius: 5rem;
+  height: 2px;
+}
+
+.Option__Range::-moz-range-thumb,
+.Option__Range::-webkit-slider-thumb {
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  border: 2px solid var(--color-accent);
+  background: var(--color-white);
+  cursor: pointer;
+  position: relative;
+  &::before {
+    content: "";
+    width: 1px;
+    height: 1rem;
+    background-color: var(--color-stroke);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+}
+
+.Option__option {
+  border: none;
+  outline: none;
+  padding: 1rem 0.5rem;
+  text-align: center;
+  color: var(--color-primary);
+  font-family: inherit;
+}
+
+.input__select {
+  background-color: transparent;
+  border: none;
+  font-family: inherit;
+  color: var(--color-accent);
+  padding: 1rem 0.5rem;
+  font-weight: 500;
+
+  cursor: pointer;
+}
+
+.Option__label {
+  margin-right: 1rem;
+}
+
+.ErrorText {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 30rem;
+  // margin-bottom: ;
+  font-size: 1.8rem;
+  // position: absolute;
+  top: 50%;
+  left: 50%;
+  color: var(--color-secondary);
+}

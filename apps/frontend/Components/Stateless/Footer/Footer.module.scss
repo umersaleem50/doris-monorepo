@@ -1,0 +1,96 @@
+@import "../../../SCSS/_mixin.scss";
+.Footer {
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--color-stroke);
+  padding-top: 6rem;
+}
+.Container {
+  max-width: 114rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  // width: 100%;
+
+  justify-content: space-between;
+  margin-bottom: 5rem;
+
+  @include respond(tab-land) {
+    width: 100%;
+    padding: 0 5rem;
+  }
+
+  @include respond(tab-port) {
+    max-width: 100%;
+    // margin: 0 5rem;
+    width: auto;
+  }
+
+  @include respond(phone) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+.BottomContainer {
+  display: flex;
+  max-width: 114rem;
+  width: 100%;
+
+  margin: 0 auto;
+
+  @include respond(tab-port) {
+    max-width: 100%;
+    // margin-left: 5rem;
+    padding: 0 5rem;
+
+    margin-top: 3rem;
+  }
+}
+
+.Box {
+  max-width: 30rem;
+}
+
+.Links {
+  display: flex;
+  flex-direction: column;
+}
+
+.Link {
+  text-decoration: none;
+  color: var(--color-secondary);
+
+  &:hover {
+    color: var(--color-urgent);
+  }
+  //   font-size: var(--font-body);
+
+  &:not(:last-of-type) {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.CopyContainer {
+  background-color: var(--color-light);
+  margin-top: 5rem;
+}
+
+.Copywrite {
+  display: flex;
+  max-width: 114rem;
+  margin: 0 auto;
+  padding: 3rem;
+  font-size: var(--font-body);
+  text-transform: uppercase;
+  font-family: inherit;
+  span {
+    text-transform: capitalize;
+    margin: 0 auto;
+
+    a {
+      color: var(--color-urgent);
+    }
+  }
+}

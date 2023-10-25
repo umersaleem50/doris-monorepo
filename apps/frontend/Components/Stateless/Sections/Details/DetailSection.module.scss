@@ -1,0 +1,31 @@
+@import "../../../../SCSS/mixin";
+
+.DetailSection {
+  width: 100%;
+  border-bottom: 2px solid var(--color-stroke);
+  margin-bottom: 10rem;
+  @include respond(phone) {
+    border-bottom: none;
+  }
+}
+.Details {
+  max-width: 114rem;
+  margin: 6rem auto;
+  display: flex;
+
+  @include respond(phone) {
+    flex-direction: column;
+  }
+}
+.Detail {
+  text-align: center;
+  padding: 0 3rem;
+
+  @include respond(phone) {
+    padding: 3rem;
+    border-bottom: 2px solid var(--color-stroke);
+  }
+  &:not(:last-of-type) {
+    border-right: 2px solid var(--color-stroke);
+  }
+}

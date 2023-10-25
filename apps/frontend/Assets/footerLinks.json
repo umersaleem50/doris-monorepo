@@ -1,0 +1,66 @@
+[
+  {
+    "heading": "Help & Support",
+    "links": [
+      {
+        "text": "Help",
+        "url": "/users/help&faq"
+      },
+      {
+        "text": "Track order",
+        "url": "/users/trackOrder"
+      },
+      {
+        "text": "Delivery & returns",
+        "url": "/users/delivery"
+      }
+    ]
+  },
+  {
+    "heading": "About",
+    "links": [
+      {
+        "text": "About us",
+        "url": "/aboutUs"
+      },
+      {
+        "text": "Careers",
+        "url": "/"
+      },
+      {
+        "text": "Corporate responsibility",
+        "url": "/"
+      }
+    ]
+  },
+  {
+    "heading": "More from Shopi",
+    "links": [
+      {
+        "text": "Mobile & SHOPI apps",
+        "url": "/"
+      },
+      {
+        "text": "SHOPI Marketplace",
+        "url": "/"
+      },
+      {
+        "text": "Gift vouchers",
+        "url": "/"
+      },
+      {
+        "text": "Investor's site",
+        "url": "/"
+      }
+    ]
+  },
+  {
+    "heading": "Shopping from:",
+    "links": [
+      {
+        "text": "Germany",
+        "url": "/"
+      }
+    ]
+  }
+]

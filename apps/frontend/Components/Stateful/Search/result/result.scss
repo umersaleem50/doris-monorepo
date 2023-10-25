@@ -1,0 +1,37 @@
+.searchResult {
+  max-width: 100%;
+  height: auto;
+  // max-height: 5rem;
+  display: flex;
+  // justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  border-top: 2px solid var(--color-stroke);
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+
+  &:hover {
+    background-color: var(--color-accent);
+  }
+
+  &__img {
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 3rem;
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--color-primary);
+
+    &--price {
+      display: flex;
+      flex: 1;
+      justify-content: flex-end;
+      // float: right;
+    }
+  }
+}

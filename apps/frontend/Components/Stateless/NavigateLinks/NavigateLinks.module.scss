@@ -1,0 +1,14 @@
+.Links {
+  display: flex;
+  font-size: var(--font-body);
+  font-family: inherit;
+  margin: 1.5rem 0;
+}
+
+.Link {
+  margin-right: 0.5rem;
+  color: var(--color-accent);
+}
+.productName {
+  color: var(--color-secondary);
+}

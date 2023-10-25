@@ -1,0 +1,26 @@
+.FullStar,
+.HalfStar {
+  height: 1.8rem;
+  width: 1.8rem;
+  fill: var(--color-accent);
+
+  &:not(:first-of-type) {
+    margin-left: 0.8rem;
+  }
+}
+
+.FullStar {
+  //   fill: var(--color-accent);
+
+  &__empty {
+    fill: var(--color-light);
+  }
+}
+
+.Ratings {
+  display: flex;
+  p {
+    margin-left: 1rem;
+    color: var(--color-light);
+  }
+}

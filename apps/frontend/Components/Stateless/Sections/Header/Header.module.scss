@@ -1,0 +1,88 @@
+@import '~apps/frontend/SCSS/_mixin.scss';
+.header {
+  max-width: 114rem;
+  height: 95vh;
+  max-height: 80rem;
+  padding: 3rem 0;
+  margin: 0 auto;
+  position: relative;
+
+  @include respond(tab-port) {
+    min-width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(105%);
+  }
+
+  h2 {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+
+    & + h2 {
+      top: 55%;
+      left: 60%;
+      font-weight: bold;
+    }
+  }
+  h5 {
+    font-size: 2rem;
+    position: absolute;
+    top: 58%;
+    left: 32%;
+    color: var(--color-primary);
+  }
+
+  h3 {
+    position: absolute;
+    top: 60%;
+    left: 38%;
+    font-size: 4rem;
+
+    filter: invert(1);
+  }
+
+  // button {
+  //   position: relative;
+  //   // bottom: 20%;
+  //   // left: 50%;
+
+  //   // transform: translate(-50%, -50%);
+  // }
+}
+.video {
+  position: absolute;
+  clip-path: url(#heroSvg);
+  // height: 35rem;
+  // width: 28rem;
+
+  height: 55vh;
+  width: 40vh;
+  // transform: scale(0.1);
+  object-fit: cover;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.vedio2 {
+  position: absolute;
+  right: 0;
+  bottom: 5%;
+  width: 20rem;
+  height: 20rem;
+  object-fit: cover;
+}
+
+.button {
+  top: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+}

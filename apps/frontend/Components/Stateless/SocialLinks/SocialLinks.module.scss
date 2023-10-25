@@ -1,0 +1,18 @@
+.SocialLinks {
+  display: flex;
+}
+
+.Icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+  fill: var(--color-secondary);
+  transition: all 0.2s ease-in;
+  &:hover {
+    fill: var(--color-urgent);
+  }
+
+  &:not(:last-of-type) {
+    margin-right: 3rem;
+  }
+}

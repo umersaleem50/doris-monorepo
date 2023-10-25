@@ -1,0 +1,55 @@
+@import '~apps/frontend/SCSS/_mixin.scss';
+
+.actionBtn {
+  position: relative;
+  float: left;
+
+  &__icon {
+    cursor: pointer;
+  }
+  &__box {
+    top: 5rem;
+    left: 0;
+    transform: translateX(-70%);
+    position: absolute;
+    background-color: var(--color-white);
+    // max-width: 9rem;
+    width: 40rem;
+    // background-color: aqua;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 1rem 3rem rgba(#000, 0.2);
+
+    @include respond(phone) {
+      transform: translateX(-60%);
+    }
+
+    &__items {
+      max-height: 30rem;
+      padding-right: 1rem;
+
+      overflow-y: scroll;
+    }
+
+    &__top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+
+.NumOfItems {
+  display: inline-block;
+  position: absolute;
+
+  background-color: var(--color-urgent);
+  border-radius: 50rem;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 0;
+  transform: translate(70%, -70%);
+}

@@ -1,0 +1,26 @@
+.TextBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.Label {
+  font-size: var(--font-body);
+
+  font-weight: 500;
+  color: var(--color-primary);
+}
+.Input {
+  margin-bottom: 1.5rem;
+  height: 4rem;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  border: 1px solid var(--color-light);
+  font-family: inherit;
+  font-size: var(--font-body);
+  font-weight: 500;
+  background-color: transparent;
+
+  &:focus {
+    outline: 1px solid var(--color-accent);
+  }
+}

@@ -1,0 +1,15 @@
+.button {
+  display: flex;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: rgb(82, 218, 228);
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.226);
+  }
+}
